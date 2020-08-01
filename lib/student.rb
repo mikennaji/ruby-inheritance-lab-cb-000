@@ -2,13 +2,7 @@ class Student  < User
 
 require_relative "./user.rb"
 
-attr_accessor :first_name, :last_name, :knowledge
-
-def initialize
-  @first_name = first_name
-  @last_name = last_name
-  @knowledge = []
-end
+attr_accessor :knowledge
 
 def learn(args)
   @knowledge << args
